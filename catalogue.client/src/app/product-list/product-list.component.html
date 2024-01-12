@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.code }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price | currency:'PLN':'symbol':'1.2-2' }}</td>
+    </tr>
+  </tbody>
+</table>
